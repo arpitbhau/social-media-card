@@ -181,3 +181,7 @@ body {
 .no{
     box-shadow: 0 0 40px #ff4444;
 }
+
+*::selection{
+    background: rgba(255 , 255 , 255 , .2);
+}
