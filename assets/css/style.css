@@ -27,7 +27,7 @@ body {
 .card {
     border-radius: 40px;
     box-shadow: 36px 36px 72px #333030,
-                -36px -36px 72px #454242;
+        -36px -36px 72px #454242;
     position: relative;
     overflow: hidden;
     padding: 4px;
@@ -41,22 +41,20 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: conic-gradient(
-        from 0deg,
-        #ff0000,
-        #ff4500,
-        #ff8c00,
-        #ffd700,
-        #32cd32,
-        #00fa9a,
-        #00ffff,
-        #1e90ff,
-        #4169e1,
-        #8a2be2,
-        #ff00ff,
-        #ff1493,
-        #ff0000
-    );
+    background: conic-gradient(from 0deg,
+            #ff0000,
+            #ff4500,
+            #ff8c00,
+            #ffd700,
+            #32cd32,
+            #00fa9a,
+            #00ffff,
+            #1e90ff,
+            #4169e1,
+            #8a2be2,
+            #ff00ff,
+            #ff1493,
+            #ff0000);
     animation: rotatePI 3s linear infinite;
     z-index: 1;
 }
@@ -73,7 +71,7 @@ body {
     z-index: 2;
 }
 
-.card > * {
+.card>* {
     position: relative;
     z-index: 4;
 }
@@ -85,44 +83,101 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: conic-gradient(
-        from 0deg,
-        #ff0000,
-        #ff4500,
-        #ff8c00,
-        #ffd700,
-        #32cd32,
-        #00fa9a,
-        #00ffff,
-        #1e90ff,
-        #4169e1,
-        #8a2be2,
-        #ff00ff,
-        #ff1493,
-        #ff0000
-    );
+    background: conic-gradient(from 0deg,
+            #ff0000,
+            #ff4500,
+            #ff8c00,
+            #ffd700,
+            #32cd32,
+            #00fa9a,
+            #00ffff,
+            #1e90ff,
+            #4169e1,
+            #8a2be2,
+            #ff00ff,
+            #ff1493,
+            #ff0000);
     animation: rotatePI 3s linear infinite;
     filter: blur(60px);
     z-index: 1;
 }
 
 @keyframes rotatePI {
-    0%{
+    0% {
         rotate: 0deg;
     }
-    100%{
+
+    100% {
         rotate: 360deg;
     }
 }
 
-.dropBoxShadow{
-    box-shadow: 1px 5px 5px #000 ;
+.dropBoxShadow {
+    box-shadow: 1px 5px 5px #000;
 }
 
-.dropTextShadow{
-    text-shadow: 1px 4px 5px #000 ;
+.dropTextShadow {
+    text-shadow: 1px 4px 5px #000;
 }
 
-.bio{
+.bio {
     font-family: "machinaLight";
+}
+
+.ig {
+    background: linear-gradient(45deg,
+            #feda75,
+            /* yellow */
+            #fdb849 10%,
+            /* light orange */
+            #fa7e1e,
+            /* orange */
+            #d82d73,
+            /* pinkish-red */
+            #c32aa3,
+            /* magenta */
+            #962fbf,
+            /* purple */
+            #4f5bd5,
+            /* blue */
+            #4f5bd5
+            /* repeat for smooth transition */
+        );
+        transition: all ease 1.5s;
+}
+
+.ig:hover{
+    background: linear-gradient(45deg, 
+  #feda75, /* yellow */
+  #fdb849, /* light orange */
+  #fa7e1e 40%, /* orange */
+  #d82d73, /* pinkish-red */
+  #c32aa3, /* magenta */
+  #962fbf, /* purple */
+  #4f5bd5, /* blue */
+  #4f5bd5 /* repeat for smooth transition */
+  );
+  transition: all ease 1.5s;
+
+}
+
+.ig > *{
+    transition: all ease-out .8s;
+}
+
+.ig > *:hover{
+    transition: all ease-out .8s;
+    rotate: 360deg;
+}
+
+.volumeBtn{
+    box-shadow: 0 0 10px #ccc;
+}
+
+.yes{
+    box-shadow: 0 0 40px #11ce92;
+}
+
+.no{
+    box-shadow: 0 0 40px #ff4444;
 }
