@@ -25,17 +25,21 @@ linksHandler()
 
 function BGM() {
 
-    var bgm;
+    // var bgm;
     
-    try{
-        bgm = new Audio("https://vgmsite.com/soundtracks/minecraft/esiyjzozpe/1-08.%20Minecraft.mp3") 
-    } catch {
-        bgm = new Audio("../assets/img/bgm.mp3")
-    }
+    // try{
+    //     bgm = new Audio("https://vgmsite.com/soundtracks/minecraft/esiyjzozpe/1-08.%20Minecraft.mp3") 
+    // } catch {
+    //     bgm = new Audio("../assets/img/bgm.mp3")
+    // }
+
+    const bgm = new Audio("./assets/img/bgm.mp3")
+
     
     bgm.loop = true
 
- 
+    bgm.currentTime = 10
+     
     let flag = true;
     
     function volumeBtn() {
