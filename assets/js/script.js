@@ -38,7 +38,7 @@ function BGM() {
     
     bgm.loop = true
 
-    bgm.currentTime = 10
+    bgm.currentTime = 15
      
     let flag = true;
     
